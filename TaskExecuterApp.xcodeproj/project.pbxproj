@@ -13,6 +13,11 @@
 		72B59718285CA46400B95D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B59716285CA46400B95D5B /* Main.storyboard */; };
 		72B5971A285CA46900B95D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B59719285CA46900B95D5B /* Assets.xcassets */; };
 		72B5971D285CA46900B95D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B5971B285CA46900B95D5B /* LaunchScreen.storyboard */; };
+		72B59726285CA61900B95D5B /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B59725285CA61800B95D5B /* UIView + Ext.swift */; };
+		72B59728285CA98E00B95D5B /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B59727285CA98E00B95D5B /* Date + Ext.swift */; };
+		72B5972A285CAC0800B95D5B /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B59729285CAC0800B95D5B /* UIViewController + Ext.swift */; };
+		72B5972C285CAD2800B95D5B /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5972B285CAD2800B95D5B /* UIButton + Ext.swift */; };
+		72B5972E285CB08E00B95D5B /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5972D285CB08E00B95D5B /* String + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		72B59719285CA46900B95D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B5971C285CA46900B95D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72B5971E285CA46900B95D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B59725285CA61800B95D5B /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		72B59727285CA98E00B95D5B /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
+		72B59729285CAC0800B95D5B /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
+		72B5972B285CAD2800B95D5B /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
+		72B5972D285CB08E00B95D5B /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		72B5970F285CA46400B95D5B /* TaskExecuterApp */ = {
 			isa = PBXGroup;
 			children = (
+				72B59724285CA60100B95D5B /* Extensions */,
 				72B59710285CA46400B95D5B /* AppDelegate.swift */,
 				72B59712285CA46400B95D5B /* SceneDelegate.swift */,
 				72B59714285CA46400B95D5B /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				72B5971E285CA46900B95D5B /* Info.plist */,
 			);
 			path = TaskExecuterApp;
+			sourceTree = "<group>";
+		};
+		72B59724285CA60100B95D5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72B59725285CA61800B95D5B /* UIView + Ext.swift */,
+				72B59727285CA98E00B95D5B /* Date + Ext.swift */,
+				72B59729285CAC0800B95D5B /* UIViewController + Ext.swift */,
+				72B5972B285CAD2800B95D5B /* UIButton + Ext.swift */,
+				72B5972D285CB08E00B95D5B /* String + Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B5972E285CB08E00B95D5B /* String + Ext.swift in Sources */,
 				72B59715285CA46400B95D5B /* ViewController.swift in Sources */,
 				72B59711285CA46400B95D5B /* AppDelegate.swift in Sources */,
+				72B59726285CA61900B95D5B /* UIView + Ext.swift in Sources */,
+				72B5972A285CAC0800B95D5B /* UIViewController + Ext.swift in Sources */,
 				72B59713285CA46400B95D5B /* SceneDelegate.swift in Sources */,
+				72B5972C285CAD2800B95D5B /* UIButton + Ext.swift in Sources */,
+				72B59728285CA98E00B95D5B /* Date + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
