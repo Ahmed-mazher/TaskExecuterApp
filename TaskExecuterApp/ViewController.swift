@@ -18,6 +18,8 @@ let tasksQueue = DispatchQueue(label: "com.app.heavyQueue", attributes: .concurr
 
 class ViewController: UIViewController {
     
+    var screenString = NSMutableAttributedString()
+    
     // MARK: - IBOutlets
     @IBOutlet weak var screenTView: UITextView!
     
@@ -36,7 +38,10 @@ class ViewController: UIViewController {
 
     // MARK: - Methods
     private func initBtnsDesign(_ unselectedBtns: [UIButton], _ selectedBtn: UIButton){
+        // unselect buttons
         self.clearButtonsSelectedSate(unselectBtns: unselectedBtns)
+        
+        // select the selected button
         selectedBtn.selectedBtn()
     }
     
@@ -49,7 +54,10 @@ class ViewController: UIViewController {
         
         // update the UI in the main thread always!
         DispatchQueue.main.async { [weak self] in
-            self?.screenTView.text += "\n \(self?.getCurrentDateAndTime() ?? "") Task \(num)"
+            let text = "\n \(self?.getCurrentDateAndTime() ?? "") Task \(num)".withBoldText(text: "Task \(num)")
+            self?.screenString.append(text)
+            
+            self?.screenTView.attributedText = self?.screenString
         }
         
     }

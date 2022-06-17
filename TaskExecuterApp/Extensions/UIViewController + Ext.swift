@@ -20,7 +20,7 @@ extension UIViewController{
     
     func getCurrentDateAndTime()->String{
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let time = dateFormatter.string(from: Date())
         return time
     }
