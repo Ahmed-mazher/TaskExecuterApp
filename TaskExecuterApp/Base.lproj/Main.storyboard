@@ -35,7 +35,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-Tv-gHK">
-                                <rect key="frame" x="60" y="516.5" width="294" height="50"/>
+                                <rect key="frame" x="60" y="546.5" width="294" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DYI-qd-Dkv">
                                         <rect key="frame" x="5" y="5" width="284" height="40"/>
@@ -149,7 +149,7 @@
                         <constraints>
                             <constraint firstItem="Sjc-Tv-gHK" firstAttribute="trailing" secondItem="XCP-Tw-T9r" secondAttribute="trailing" id="Bxl-1Y-9I8"/>
                             <constraint firstItem="XCP-Tw-T9r" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="OTv-xp-BOe"/>
-                            <constraint firstItem="Sjc-Tv-gHK" firstAttribute="top" secondItem="XCP-Tw-T9r" secondAttribute="bottom" constant="20" id="OaF-cH-m1d"/>
+                            <constraint firstItem="Sjc-Tv-gHK" firstAttribute="top" secondItem="XCP-Tw-T9r" secondAttribute="bottom" constant="50" id="OaF-cH-m1d"/>
                             <constraint firstItem="Sjc-Tv-gHK" firstAttribute="leading" secondItem="XCP-Tw-T9r" secondAttribute="leading" id="Suk-j1-pAk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XCP-Tw-T9r" secondAttribute="trailing" constant="60" id="aEd-Tm-IBC"/>
                             <constraint firstItem="XCP-Tw-T9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="pgV-7L-eea"/>
